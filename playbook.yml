@@ -2,8 +2,7 @@
   connection: local
   become: yes
   vars:
-     jenkins_hostname: jenkins.example.com
+  jenkins_hostname: "127.0.0.1"
   roles:
-     - role: tasks/java.yml
-     - role: tasks/main.yml
-       become: true
+    - role: geerlingguy.jenkins
+      become: true
