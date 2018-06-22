@@ -3,6 +3,7 @@
   become: yes
   vars:
     jenkins_hostname: "127.0.0.1"
+    java_packages: "java-1.8.0-openjdk"
   roles:
     - role: geerlingguy.jenkins
       become: true
